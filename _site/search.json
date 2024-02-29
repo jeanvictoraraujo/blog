@@ -1,38 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Postagens",
+    "objectID": "posts/regex/index.html",
+    "href": "posts/regex/index.html",
+    "title": "Expressões Regulares",
     "section": "",
-    "text": "Gráfico Interativo do Ibovespa\n          \n        \n      \n    \n      \n        Evolução do Ibovespa desde 1990 no Python.\n      \n    \n      \n        28/02/2024\n      \n    \n    \n    \n  \n  \n\n\n\n\n  \n  \n    \n    \n      \n      \n        \n          \n        \n        \n      \n    \n    \n    \n      \n    \n      \n        \n          Expressões Regulares\n          \n        \n      \n    \n      \n        Conceito e exemplo de expressões regulares.\n      \n    \n      \n        17/02/2024\n      \n    \n    \n    \n  \n  \n\n\n\n\n  \n  \n    \n    \n      \n      \n        \n          \n        \n        \n      \n    \n    \n    \n      \n    \n      \n        \n          Conceito de CDI\n          \n        \n      \n    \n      \n        Breve entendimento sobre o conceito de CDI.\n      \n    \n      \n        07/01/2024\n      \n    \n    \n    \n  \n  \n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Three packages that port the tidyverse to Python",
-    "section": "",
-    "text": "AAAAAAAAAAAAAAAAAAA A\nA A AA A"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Jean Victor",
-    "section": "",
-    "text": "Escrevo sobre finanças & tecnologia"
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "license.html",
-    "href": "license.html",
-    "title": "License",
-    "section": "",
-    "text": "Deixo nesta página os dévitos creditos à Isabella Velásquez pelo excelente template.\nVocê pode acompanhar suas postagens no blog https://ivelasq.rbind.io/\n© Copyright Isabella Velásquez"
+    "text": "Expressões regulares são padrões utilizados para encontrar sequências de caracteres em textos. Permitem a identificação de padrões específicos, como números de telefone, endereços de e-mail, CPFs e demais elementos\nAlguns conceitos importantes:\n[] Um conjunto de caracteres. Observação: Dentro de um conjunto, os caracteres especiais normalmente não precisam ser escapados (Exemplo: . , +, -)\n? Quantificador em expressões regulares que indica que o padrão que o precede é opcional, ou seja, pode ocorrer zero ou uma vez\nenota uma fronteira de palavra, garantindo que o padrão comece e termine em uma fronteira de palavra (ou seja, não parte de um texto maior).\natch no qual os dígitos correspondem a numeros de 0–9\n[a-zA-Z] Match para qualquer caracter entre a-z (minúsculo) ou A-Z (maiúsculo)\nExemplo de Uso de Regex para Encontrar Endereços de E-mail:\n\nimport re\n\ntexto = \"joao teste1@gmail.co maria teste2@gmail.com adolfo teste3@protonmail.com\"\n\npadrao_email = r\"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{3,}\"\n\nemails_encontrados = re.findall(padrao_email, texto)\n\nprint(emails_encontrados)\n\n['teste2@gmail.com', 'teste3@protonmail.com']\n\n\nNeste exemplo, utilizamos uma expressão regular para encontrar todos os endereços de e-mail em um texto.\nO padrão r”[A-Za-z0–9._%+-]+@[A-Za-z0–9.-]+.[A-Z|a-z]{3,}” é projetado para corresponder a uma ampla variedade de endereços de e-mail, incluindo domínios com três ou mais caracteres após o ponto.\nExemplo de Uso de Regex para Encontrar CPFs:\n\nimport re\n\nlista_cpfs = [\n    \"Fjwf: 000.000.000-11\",\n    \"rfjkfrfjk 239.458.234-10\",\n    \"ejkjefke 09812345691\",\n    \"cpf invalido 984395930111\",\n]\n\npadrao_cpf = r\"\\b\\d{3}\\.?\\d{3}\\.?\\d{3}-?\\d{2}\\b\"\n\ncpfs = []\n\nfor texto in lista_cpfs:\n    cpfs.append(re.findall(padrao_cpf, texto))\n\nprint(cpfs)\n\n[['000.000.000-11'], ['239.458.234-10'], ['09812345691'], []]\n\n\nNeste exemplo, usamos uma expressão regular para encontrar CPFs em uma lista de strings.\nO padrão r”.?.?-? corresponde a CPFs em diferentes formatos, incluindo aqueles com ou sem pontos e hífen."
   },
   {
     "objectID": "posts/cdi/index.html",
@@ -42,11 +14,25 @@
     "text": "Antes de iniciarmos, alguns conceitos essenciais:\nO BACEN tem como uma de suas responsabilidades o controle monetário. Dentro da política monetária, a taxa Selic é o principal instrumento à disposição do BC e que também afeta o comportamento de outras variáveis como preços e produtos.\nConforme informado pelo próprio BC, a política monetária afeta os preços da economia por meio:\n\nDa decisão entre consumo e investimento das famílias e empresas\nDa taxa de câmbio\ndo preço dos ativos\ndo crédito\ndas expectativas\n\nO canal de transmissão das taxas de juros para decisões de consumo e investimento é o mais conhecido da política monetária.\nSELIC = Sistema Especial de Liquidação e Custódia (Infraestrutura do Sistema Financeiro para compra e venda de títulos públicos, que são uma forma de financiamento do governo).\nO BACEN se reune a cada 45 dias por meio do Comitê de Política Monetária (COPOM) e estipula a SELIC Meta. Com um acréscimo nas taxas de juros em um exemplo de tentativa de contenção da inflação, por exemplo, o custo de oportunidade para investimento em renda variável aumenta e o valor da dívida também acaba aumentando. Já em um caso de tentativa de aquecimento da economia, uma das alternativas poderia ser o aumento nessa taxa básica de juros.\nAcima falamos da SELIC Meta. Mas também temos a SELIC Over, que é a taxa média das operações compromissadas com prazo de um dia útil que utilizam títulos públicos federais como garantia e que ocorrem diariamente no SELIC. O BACEN acaba atuando no open market para que a SELIC Meta seja próxima a SELIC Over.\nEntramos em um grande ponto: O sistema bancário brasileiro é um sistema de reservas fracionárias. Logo, os bancos têm em posse apenas uma fração da movimentação do dinheiro total. Podemos ter casos em que os bancos estão com valores menores que o previsto nas contas no BACEN ou valores acima do previsto. Seguindo a lógica, um banco com excesso de reservas empresta dinheiro aos bancos que precisam de dinheiro com cobrança de juros. No entanto, se o empréstimo for realizado com títulos públicos como garantia, legalmente eles devem ser pagos no dia seguinte. Dai surge o nome overnight (“durante a noite”)\nQual o motivo do CDI?\nPodemos citar como um dos motivos a regulação do sistema financeiro. Os bancos obrigatoriamente tem de fechar o dia com o caixa positivo.\nEm situações as quais os bancos precisam de dinheiro e não dispõem de títulos publicos para oferecer como garantia ou pretendem realizar o empréstimo por mais de um dia, é emitido um título chamado de Certificado de Depósito Interbancário (CDI)\nA taxa cobrada nos empréstimos no mercado interbancário emitindo CDI é chamada Taxa DI (Taxa de depósitos interfinanceiros)\n“A man who asks is a fool for five minutes. A man who never asks is a fool for life.”"
   },
   {
-    "objectID": "posts/regex/index.html",
-    "href": "posts/regex/index.html",
-    "title": "Expressões Regulares",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Postagens",
     "section": "",
-    "text": "Antes de iniciarmos, alguns conceitos essenciais:\nO BACEN tem como uma de suas responsabilidades o controle monetário. Dentro da política monetária, a taxa Selic é o principal instrumento à disposição do BC e que também afeta o comportamento de outras variáveis como preços e produtos.\nConforme informado pelo próprio BC, a política monetária afeta os preços da economia por meio:\n\nDa decisão entre consumo e investimento das famílias e empresas\nDa taxa de câmbio\ndo preço dos ativos\ndo crédito\ndas expectativas\n\nO canal de transmissão das taxas de juros para decisões de consumo e investimento é o mais conhecido da política monetária.\nSELIC = Sistema Especial de Liquidação e Custódia (Infraestrutura do Sistema Financeiro para compra e venda de títulos públicos, que são uma forma de financiamento do governo).\nO BACEN se reune a cada 45 dias por meio do Comitê de Política Monetária (COPOM) e estipula a SELIC Meta. Com um acréscimo nas taxas de juros em um exemplo de tentativa de contenção da inflação, por exemplo, o custo de oportunidade para investimento em renda variável aumenta e o valor da dívida também acaba aumentando. Já em um caso de tentativa de aquecimento da economia, uma das alternativas poderia ser o aumento nessa taxa básica de juros.\nAcima falamos da SELIC Meta. Mas também temos a SELIC Over, que é a taxa média das operações compromissadas com prazo de um dia útil que utilizam títulos públicos federais como garantia e que ocorrem diariamente no SELIC. O BACEN acaba atuando no open market para que a SELIC Meta seja próxima a SELIC Over.\nEntramos em um grande ponto: O sistema bancário brasileiro é um sistema de reservas fracionárias. Logo, os bancos têm em posse apenas uma fração da movimentação do dinheiro total. Podemos ter casos em que os bancos estão com valores menores que o previsto nas contas no BACEN ou valores acima do previsto. Seguindo a lógica, um banco com excesso de reservas empresta dinheiro aos bancos que precisam de dinheiro com cobrança de juros. No entanto, se o empréstimo for realizado com títulos públicos como garantia, legalmente eles devem ser pagos no dia seguinte. Dai surge o nome overnight (“durante a noite”)\nQual o motivo do CDI?\nPodemos citar como um dos motivos a regulação do sistema financeiro. Os bancos obrigatoriamente tem de fechar o dia com o caixa positivo.\nEm situações as quais os bancos precisam de dinheiro e não dispõem de títulos publicos para oferecer como garantia ou pretendem realizar o empréstimo por mais de um dia, é emitido um título chamado de Certificado de Depósito Interbancário (CDI)\nA taxa cobrada nos empréstimos no mercado interbancário emitindo CDI é chamada Taxa DI (Taxa de depósitos interfinanceiros)\n“A man who asks is a fool for five minutes. A man who never asks is a fool for life.”"
+    "text": "Gráfico Interativo do Ibovespa\n          \n        \n      \n    \n      \n        Evolução do Ibovespa desde 1990 no Python.\n      \n    \n      \n        28/02/2024\n      \n    \n    \n    \n  \n  \n\n\n\n\n  \n  \n    \n    \n      \n      \n        \n          \n        \n        \n      \n    \n    \n    \n      \n    \n      \n        \n          Expressões Regulares\n          \n        \n      \n    \n      \n        Conceito e exemplo de expressões regulares.\n      \n    \n      \n        17/02/2024\n      \n    \n    \n    \n  \n  \n\n\n\n\n  \n  \n    \n    \n      \n      \n        \n          \n        \n        \n      \n    \n    \n    \n      \n    \n      \n        \n          Conceito de CDI\n          \n        \n      \n    \n      \n        Breve entendimento sobre o conceito de CDI.\n      \n    \n      \n        07/01/2024\n      \n    \n    \n    \n  \n  \n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Jean Victor",
+    "section": "",
+    "text": "Escrevo sobre finanças & tecnologia"
+  },
+  {
+    "objectID": "license.html",
+    "href": "license.html",
+    "title": "License",
+    "section": "",
+    "text": "Deixo nesta página os dévitos creditos à Isabella Velásquez pelo excelente template.\nVocê pode acompanhar suas postagens no blog https://ivelasq.rbind.io/\n© Copyright Isabella Velásquez"
   },
   {
     "objectID": "posts/ibov_grafico/index.html",

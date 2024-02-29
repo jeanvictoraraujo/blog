@@ -1728,31 +1728,115 @@ LjE2LjEwMA==
 
 
 
-<p>Antes de iniciarmos, alguns conceitos essenciais:</p>
-<p>O BACEN tem como uma de suas responsabilidades o controle monetário. Dentro da política monetária, a taxa Selic é o principal instrumento à disposição do BC e que também afeta o comportamento de outras variáveis como preços e produtos.</p>
-<p>Conforme informado pelo próprio BC, a política monetária afeta os preços da economia por meio:</p>
-<ol type="i">
-<li><p>Da decisão entre consumo e investimento das famílias e empresas</p></li>
-<li><p>Da taxa de câmbio</p></li>
-<li><p>do preço dos ativos</p></li>
-<li><p>do crédito</p></li>
-<li><p>das expectativas</p></li>
-</ol>
-<p>O canal de transmissão das taxas de juros para decisões de consumo e investimento é o mais conhecido da política monetária.</p>
-<p>SELIC = Sistema Especial de Liquidação e Custódia (Infraestrutura do Sistema Financeiro para compra e venda de títulos públicos, que são uma forma de financiamento do governo).</p>
-<p>O BACEN se reune a cada 45 dias por meio do Comitê de Política Monetária (COPOM) e estipula a SELIC Meta. Com um acréscimo nas taxas de juros em um exemplo de tentativa de contenção da inflação, por exemplo, o custo de oportunidade para investimento em renda variável aumenta e o valor da dívida também acaba aumentando. Já em um caso de tentativa de aquecimento da economia, uma das alternativas poderia ser o aumento nessa taxa básica de juros.</p>
-<p>Acima falamos da SELIC Meta. Mas também temos a SELIC Over, que é a taxa média das operações compromissadas com prazo de um dia útil que utilizam títulos públicos federais como garantia e que ocorrem diariamente no SELIC. O BACEN acaba atuando no open market para que a SELIC Meta seja próxima a SELIC Over.</p>
-<p>Entramos em um grande ponto: O sistema bancário brasileiro é um sistema de reservas fracionárias. Logo, os bancos têm em posse apenas uma fração da movimentação do dinheiro total. Podemos ter casos em que os bancos estão com valores menores que o previsto nas contas no BACEN ou valores acima do previsto. Seguindo a lógica, um banco com excesso de reservas empresta dinheiro aos bancos que precisam de dinheiro com cobrança de juros. No entanto, se o empréstimo for realizado com títulos públicos como garantia, legalmente eles devem ser pagos no dia seguinte. Dai surge o nome overnight (“durante a noite”)</p>
-<p>Qual o motivo do CDI?</p>
-<p>Podemos citar como um dos motivos a regulação do sistema financeiro. Os bancos obrigatoriamente tem de fechar o dia com o caixa positivo.</p>
-<p>Em situações as quais os bancos precisam de dinheiro e não dispõem de títulos publicos para oferecer como garantia ou pretendem realizar o empréstimo por mais de um dia, é emitido um título chamado de Certificado de Depósito Interbancário (CDI)</p>
-<p>A taxa cobrada nos empréstimos no mercado interbancário emitindo CDI é chamada Taxa DI (Taxa de depósitos interfinanceiros)</p>
-<p>“A man who asks is a fool for five minutes. A man who never asks is a fool for life.”</p>
+<p>Expressões regulares são padrões utilizados para encontrar sequências de caracteres em textos. Permitem a identificação de padrões específicos, como números de telefone, endereços de e-mail, CPFs e demais elementos</p>
+<p>Alguns conceitos importantes:</p>
+<p>[] Um conjunto de caracteres. Observação: Dentro de um conjunto, os caracteres especiais normalmente não precisam ser escapados (Exemplo: . , +, -)</p>
+<p>? Quantificador em expressões regulares que indica que o padrão que o precede é opcional, ou seja, pode ocorrer zero ou uma vez</p>
+<p>enota uma fronteira de palavra, garantindo que o padrão comece e termine em uma fronteira de palavra (ou seja, não parte de um texto maior).</p>
+<p>atch no qual os dígitos correspondem a numeros de 0–9</p>
+<p>[a-zA-Z] Match para qualquer caracter entre a-z (minúsculo) ou A-Z (maiúsculo)</p>
+<p>Exemplo de Uso de Regex para Encontrar Endereços de E-mail:</p>
+<div id="022fb304" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> re</span>
+<span id="cb1-2"></span>
+<span id="cb1-3">texto <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"joao teste1@gmail.co maria teste2@gmail.com adolfo teste3@protonmail.com"</span></span>
+<span id="cb1-4"></span>
+<span id="cb1-5">padrao_email <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{3,}"</span></span>
+<span id="cb1-6"></span>
+<span id="cb1-7">emails_encontrados <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> re.findall(padrao_email, texto)</span>
+<span id="cb1-8"></span>
+<span id="cb1-9"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(emails_encontrados)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>['teste2@gmail.com', 'teste3@protonmail.com']</code></pre>
+</div>
+</div>
+<p>Neste exemplo, utilizamos uma expressão regular para encontrar todos os endereços de e-mail em um texto.</p>
+<p>O padrão r”[A-Za-z0–9._%+-]+@[A-Za-z0–9.-]+.[A-Z|a-z]{3,}” é projetado para corresponder a uma ampla variedade de endereços de e-mail, incluindo domínios com três ou mais caracteres após o ponto.</p>
+<p>Exemplo de Uso de Regex para Encontrar CPFs:</p>
+<div id="fc7659ee" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> re</span>
+<span id="cb3-2"></span>
+<span id="cb3-3">lista_cpfs <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [</span>
+<span id="cb3-4">    <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Fjwf: 000.000.000-11"</span>,</span>
+<span id="cb3-5">    <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"rfjkfrfjk 239.458.234-10"</span>,</span>
+<span id="cb3-6">    <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"ejkjefke 09812345691"</span>,</span>
+<span id="cb3-7">    <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"cpf invalido 984395930111"</span>,</span>
+<span id="cb3-8">]</span>
+<span id="cb3-9"></span>
+<span id="cb3-10">padrao_cpf <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">r"\b\d</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{3}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\.?\d</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{3}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\.?\d</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{3}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">-?\d</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{2}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\b"</span></span>
+<span id="cb3-11"></span>
+<span id="cb3-12">cpfs <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> []</span>
+<span id="cb3-13"></span>
+<span id="cb3-14"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> texto <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> lista_cpfs:</span>
+<span id="cb3-15">    cpfs.append(re.findall(padrao_cpf, texto))</span>
+<span id="cb3-16"></span>
+<span id="cb3-17"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(cpfs)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[['000.000.000-11'], ['239.458.234-10'], ['09812345691'], []]</code></pre>
+</div>
+</div>
+<p>Neste exemplo, usamos uma expressão regular para encontrar CPFs em uma lista de strings.</p>
+<p>O padrão r”.?.?-? corresponde a CPFs em diferentes formatos, incluindo aqueles com ou sem pontos e hífen.</p>
 
 
 
  ]]></description>
   <category>Tecnologia</category>
+  <category>Python</category>
   <guid>https://jeanv.netlify.app/posts/regex/</guid>
   <pubDate>Sat, 17 Feb 2024 03:00:00 GMT</pubDate>
   <media:content url="https://jeanv.netlify.app/posts/regex/image.jpg" medium="image" type="image/jpeg"/>
