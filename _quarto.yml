@@ -1,0 +1,42 @@
+project:
+  type: website
+
+website:
+  title: "Jean Victor"
+  site-url: "https://jeanv.netlify.app/"
+  description: "Meu blog"
+  favicon: favicon.jpg
+  twitter-card: true
+  open-graph: true
+  navbar:
+    title: "Jean Victor"
+    background: "#000000"
+    foreground: "#FFFFFF"
+    pinned: true
+    left:
+      - text: ""
+    right:
+      - text: "Autor"
+        file: about.qmd
+      - text: "Posts"
+        file: index.qmd
+  page-footer:
+    left:
+      - href: https://www.quarto.org
+        text: Built with Quarto
+    right: 
+      - href: license.qmd
+        text: License
+      - icon: github
+        href: https://github.com/jeanvictoraraujo
+      - icon: linkedin
+        href: https://www.linkedin.com/in/jeanvictorar/
+
+
+format:
+  html:
+    theme: [litera, styles.scss]
+    highlight-style: nord
+    
+execute:
+  freeze: auto

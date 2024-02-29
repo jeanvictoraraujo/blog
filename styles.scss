@@ -1,0 +1,153 @@
+/*-- scss:defaults --*/
+
+// Fonts
+
+
+$font-family-sans-serif:  "Crimson Text" !default;
+$font-family-serif:       "Crimson Text" !default;
+$font-family-monospace: "Inconsolata" !default;
+$font-size-base:              1.1rem !default;
+
+// Nav bar
+
+.li.a.dropdown-item {
+  color: "#2B2423";
+}
+
+.dropdown-text {
+  color: "#FFFFFF";
+}
+
+// Typography
+
+h1.title {
+  font-family: "Crimson Text";
+  font-size: 30px;
+}
+
+h1.title.display-7 {
+  font-family: "Crimson Text";
+}
+
+p.subtitle.lead {
+  text-align: center;
+}
+
+a:href {
+  color: #00ab6b;
+}
+
+a:hover {
+    color: #038252;
+    text-decoration: none;
+}
+
+//** Global textual link color.
+$link-color:            #E2402E !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 15%) !default;
+//** Link decoration.
+$link-decoration: none;
+$link-hover-decoration: none;
+
+
+.navbar {
+  color: #FFFFFF;
+}
+
+.navbar-title {
+  color: #FFFFFF;
+  font-family: "Crimson Text";
+}
+
+a.sidebar-item-text.sidebar-link {
+    color: #FFFFFF;
+}
+
+.navbar li.dropdown-header {
+  text-transform: none;
+}
+
+.quarto-listing-category {
+    font-family: "Crimson Text";
+}
+
+.quarto-listing-category-title {
+    font-family: "Crimson Text";
+}/* Fonts */
+:root {
+  --font-family-sans-serif: "Crimson Text", sans-serif;
+  --font-family-serif: "Crimson Text", serif;
+  --font-family-monospace: "Inconsolata", monospace;
+  --font-size-base: 1.1rem;
+}
+
+/* Nav bar */
+.navbar .li a.dropdown-item {
+  color: #2B2423;
+}
+
+.dropdown-text {
+  color: #FFFFFF;
+}
+
+/* Typography */
+h1.title {
+  font-family: "Crimson Text";
+  font-size: 30px;
+}
+
+h1.title.display-7 {
+  font-family: "Crimson Text";
+}
+
+p.subtitle.lead {
+  text-align: center;
+}
+
+a {
+  color: #00ab6b;
+}
+
+a:hover {
+  color: #038252;
+  text-decoration: none;
+}
+
+/* Global textual link color */
+:root {
+  --link-color: #E2402E;
+  --link-hover-color: darken(var(--link-color), 15%);
+}
+
+/* Link decoration */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+.navbar {
+  color: #FFFFFF;
+}
+
+.navbar-title {
+  color: #FFFFFF;
+  font-family: "Crimson Text";
+}
+
+a.sidebar-item-text.sidebar-link {
+  color: #FFFFFF;
+}
+
+.navbar li.dropdown-header {
+  text-transform: none;
+}
+
+.quarto-listing-category,
+.quarto-listing-category-title {
+  font-family: "Crimson Text";
+}

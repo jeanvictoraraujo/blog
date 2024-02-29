@@ -1,0 +1,44 @@
+---
+title: "Conceito de CDI"
+date: "2024-01-07"
+categories: ["Renda Fixa"]
+description: Breve entendimento sobre o conceito de CDI.
+image: image.jpg
+---
+
+Antes de iniciarmos, alguns conceitos essenciais:
+
+O BACEN tem como uma de suas responsabilidades o controle monetário. Dentro da política monetária, a taxa Selic é o principal instrumento à disposição do BC e que também afeta o comportamento de outras variáveis como preços e produtos.
+
+Conforme informado pelo próprio BC, a política monetária afeta os preços da economia por meio:
+
+(i) Da decisão entre consumo e investimento das famílias e empresas
+
+(ii) Da taxa de câmbio
+
+(iii) do preço dos ativos
+
+(iv) do crédito
+
+(v) das expectativas
+
+O canal de transmissão das taxas de juros para decisões de consumo e investimento é o mais conhecido da política monetária.
+
+
+SELIC = Sistema Especial de Liquidação e Custódia (Infraestrutura do Sistema Financeiro para compra e venda de títulos públicos, que são uma forma de financiamento do governo).
+
+O BACEN se reune a cada 45 dias por meio do Comitê de Política Monetária (COPOM) e estipula a SELIC Meta. Com um acréscimo nas taxas de juros em um exemplo de tentativa de contenção da inflação, por exemplo, o custo de oportunidade para investimento em renda variável aumenta e o valor da dívida também acaba aumentando. Já em um caso de tentativa de aquecimento da economia, uma das alternativas poderia ser o aumento nessa taxa básica de juros.
+
+Acima falamos da SELIC Meta. Mas também temos a SELIC Over, que é a taxa média das operações compromissadas com prazo de um dia útil que utilizam títulos públicos federais como garantia e que ocorrem diariamente no SELIC. O BACEN acaba atuando no open market para que a SELIC Meta seja próxima a SELIC Over.
+
+Entramos em um grande ponto: O sistema bancário brasileiro é um sistema de reservas fracionárias. Logo, os bancos têm em posse apenas uma fração da movimentação do dinheiro total. Podemos ter casos em que os bancos estão com valores menores que o previsto nas contas no BACEN ou valores acima do previsto. Seguindo a lógica, um banco com excesso de reservas empresta dinheiro aos bancos que precisam de dinheiro com cobrança de juros. No entanto, se o empréstimo for realizado com títulos públicos como garantia, legalmente eles devem ser pagos no dia seguinte. Dai surge o nome overnight (“durante a noite”)
+
+Qual o motivo do CDI?
+
+Podemos citar como um dos motivos a regulação do sistema financeiro. Os bancos obrigatoriamente tem de fechar o dia com o caixa positivo.
+
+Em situações as quais os bancos precisam de dinheiro e não dispõem de títulos publicos para oferecer como garantia ou pretendem realizar o empréstimo por mais de um dia, é emitido um título chamado de Certificado de Depósito Interbancário (CDI)
+
+A taxa cobrada nos empréstimos no mercado interbancário emitindo CDI é chamada Taxa DI (Taxa de depósitos interfinanceiros)
+
+“A man who asks is a fool for five minutes. A man who never asks is a fool for life.”

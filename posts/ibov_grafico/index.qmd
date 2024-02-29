@@ -1,0 +1,93 @@
+---
+title: "Gráfico Interativo do Ibovespa"
+date: "2024-02-28"
+categories: ["Tecnologia", "Renda Variável", "Python"]
+description: Evolução do Ibovespa desde 1990 no Python.
+image: image.jpg
+jupyter: python3
+---
+
+Se uma imagem vale mais que mil palavras, quanto vale uma animação?
+
+A partir da biblioteca matplotlib conseguimos usar um conjunto de features, entre eles o de criar uma animação
+
+Usaremos do pandas para leitura do arquivo xlsx (disponível no github), módulo display da IPython para visualização do output e o módulo date da biblioteca datetime, para manipulação de datas
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.animation as animation
+import numpy as np
+import matplotlib.dates as mdates
+from IPython import display
+import pandas as pd
+from datetime import date
+
+pd.set_option("future.no_silent_downcasting", True)
+```
+
+Lendo o arquivo, renomeando as coluna de fechamento, dropando os N/As e utilizando do resample para uma frequência mensal (último dia de cada mês)
+```{python}
+ibov = pd.read_excel(
+    r"C:\Users\Jean Victor\Desktop\Projetos\IBOV.xlsx", index_col="Data"
+).dropna()
+ibov = ibov.rename(columns={"Fechamento\najust p/ prov\nEm moeda orig": "Fechamento"})
+ibov = ibov.replace("-", float("nan")).dropna()
+ibov = ibov.resample("ME").last()
+```
+
+(Nesta parte é importante ressaltar a configuração do limite dos eixos X e Y). Caso você tente executar o código sem isto, seu gráfico vai sofrer distorções grandes dado que o eixo será ajustado automaticamente a cada frame
+
+Com ax.spines removemos as grades da direita e do topo
+
+```{python}
+fig: plt.Figure = plt.figure()
+ax: plt.Axes
+
+fig, ax = plt.subplots()
+
+
+ax.set_title("Ibovespa - 1990 a 2024")
+ax.set_xlim(date(1989, 12, 31), date(2024, 2, 29))
+ax.set_ylim(0, 130000)
+ax.spines[["right", "top"]].set_visible(False)
+```
+
+Criando uma função para formatação de nosso eixo Y com formatador de milhar como ponto e setando o eixo X por meio do set_major_locator para um intervalo de 4 anos. Em seguida, criamos a função de animação para que cada ponto do gráfico seja percorrido, inclusive o último.
+
+```{python}
+def format_yaxis(x, pos=None):
+    """Formatando os valores do eixo x."""
+    return "{:,.0f}".format(x).replace(",", ".")
+
+
+ax.yaxis.set_major_formatter(plt.FuncFormatter(format_yaxis))
+ax.xaxis.set_major_locator(mdates.YearLocator(4))
+
+
+def animate(i):
+
+    data = ibov.iloc[: int(i + 1)]
+    ax.plot(data.index, data.values, color="b")
+
+```
+
+Aplicando a função
+
+```{python}
+ani = animation.FuncAnimation(
+    fig, animate, frames=range(0, len(ibov)), interval=50, repeat=False
+)
+
+video = ani.to_html5_video()
+
+
+html = display.HTML(video)
+
+
+display.display(html)
+plt.close()
+
+```
+
+Voilà

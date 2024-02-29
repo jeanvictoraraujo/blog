@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Postagens",
+    "section": "",
+    "text": "Gráfico Interativo do Ibovespa\n          \n        \n      \n    \n      \n        Evolução do Ibovespa desde 1990 no Python.\n      \n    \n      \n        28/02/2024\n      \n    \n    \n    \n  \n  \n\n\n\n\n  \n  \n    \n    \n      \n      \n        \n          \n        \n        \n      \n    \n    \n    \n      \n    \n      \n        \n          Expressões Regulares\n          \n        \n      \n    \n      \n        Conceito e exemplo de expressões regulares.\n      \n    \n      \n        17/02/2024\n      \n    \n    \n    \n  \n  \n\n\n\n\n  \n  \n    \n    \n      \n      \n        \n          \n        \n        \n      \n    \n    \n    \n      \n    \n      \n        \n          Conceito de CDI\n          \n        \n      \n    \n      \n        Breve entendimento sobre o conceito de CDI.\n      \n    \n      \n        07/01/2024\n      \n    \n    \n    \n  \n  \n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Three packages that port the tidyverse to Python",
+    "section": "",
+    "text": "AAAAAAAAAAAAAAAAAAA A\nA A AA A"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Jean Victor",
+    "section": "",
+    "text": "Escrevo sobre finanças & tecnologia"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "license.html",
+    "href": "license.html",
+    "title": "License",
+    "section": "",
+    "text": "Deixo nesta página os dévitos creditos à Isabella Velásquez pelo excelente template.\nVocê pode acompanhar suas postagens no blog https://ivelasq.rbind.io/\n© Copyright Isabella Velásquez"
+  },
+  {
+    "objectID": "posts/cdi/index.html",
+    "href": "posts/cdi/index.html",
+    "title": "Conceito de CDI",
+    "section": "",
+    "text": "Antes de iniciarmos, alguns conceitos essenciais:\nO BACEN tem como uma de suas responsabilidades o controle monetário. Dentro da política monetária, a taxa Selic é o principal instrumento à disposição do BC e que também afeta o comportamento de outras variáveis como preços e produtos.\nConforme informado pelo próprio BC, a política monetária afeta os preços da economia por meio:\n\nDa decisão entre consumo e investimento das famílias e empresas\nDa taxa de câmbio\ndo preço dos ativos\ndo crédito\ndas expectativas\n\nO canal de transmissão das taxas de juros para decisões de consumo e investimento é o mais conhecido da política monetária.\nSELIC = Sistema Especial de Liquidação e Custódia (Infraestrutura do Sistema Financeiro para compra e venda de títulos públicos, que são uma forma de financiamento do governo).\nO BACEN se reune a cada 45 dias por meio do Comitê de Política Monetária (COPOM) e estipula a SELIC Meta. Com um acréscimo nas taxas de juros em um exemplo de tentativa de contenção da inflação, por exemplo, o custo de oportunidade para investimento em renda variável aumenta e o valor da dívida também acaba aumentando. Já em um caso de tentativa de aquecimento da economia, uma das alternativas poderia ser o aumento nessa taxa básica de juros.\nAcima falamos da SELIC Meta. Mas também temos a SELIC Over, que é a taxa média das operações compromissadas com prazo de um dia útil que utilizam títulos públicos federais como garantia e que ocorrem diariamente no SELIC. O BACEN acaba atuando no open market para que a SELIC Meta seja próxima a SELIC Over.\nEntramos em um grande ponto: O sistema bancário brasileiro é um sistema de reservas fracionárias. Logo, os bancos têm em posse apenas uma fração da movimentação do dinheiro total. Podemos ter casos em que os bancos estão com valores menores que o previsto nas contas no BACEN ou valores acima do previsto. Seguindo a lógica, um banco com excesso de reservas empresta dinheiro aos bancos que precisam de dinheiro com cobrança de juros. No entanto, se o empréstimo for realizado com títulos públicos como garantia, legalmente eles devem ser pagos no dia seguinte. Dai surge o nome overnight (“durante a noite”)\nQual o motivo do CDI?\nPodemos citar como um dos motivos a regulação do sistema financeiro. Os bancos obrigatoriamente tem de fechar o dia com o caixa positivo.\nEm situações as quais os bancos precisam de dinheiro e não dispõem de títulos publicos para oferecer como garantia ou pretendem realizar o empréstimo por mais de um dia, é emitido um título chamado de Certificado de Depósito Interbancário (CDI)\nA taxa cobrada nos empréstimos no mercado interbancário emitindo CDI é chamada Taxa DI (Taxa de depósitos interfinanceiros)\n“A man who asks is a fool for five minutes. A man who never asks is a fool for life.”"
+  },
+  {
+    "objectID": "posts/regex/index.html",
+    "href": "posts/regex/index.html",
+    "title": "Expressões Regulares",
+    "section": "",
+    "text": "Antes de iniciarmos, alguns conceitos essenciais:\nO BACEN tem como uma de suas responsabilidades o controle monetário. Dentro da política monetária, a taxa Selic é o principal instrumento à disposição do BC e que também afeta o comportamento de outras variáveis como preços e produtos.\nConforme informado pelo próprio BC, a política monetária afeta os preços da economia por meio:\n\nDa decisão entre consumo e investimento das famílias e empresas\nDa taxa de câmbio\ndo preço dos ativos\ndo crédito\ndas expectativas\n\nO canal de transmissão das taxas de juros para decisões de consumo e investimento é o mais conhecido da política monetária.\nSELIC = Sistema Especial de Liquidação e Custódia (Infraestrutura do Sistema Financeiro para compra e venda de títulos públicos, que são uma forma de financiamento do governo).\nO BACEN se reune a cada 45 dias por meio do Comitê de Política Monetária (COPOM) e estipula a SELIC Meta. Com um acréscimo nas taxas de juros em um exemplo de tentativa de contenção da inflação, por exemplo, o custo de oportunidade para investimento em renda variável aumenta e o valor da dívida também acaba aumentando. Já em um caso de tentativa de aquecimento da economia, uma das alternativas poderia ser o aumento nessa taxa básica de juros.\nAcima falamos da SELIC Meta. Mas também temos a SELIC Over, que é a taxa média das operações compromissadas com prazo de um dia útil que utilizam títulos públicos federais como garantia e que ocorrem diariamente no SELIC. O BACEN acaba atuando no open market para que a SELIC Meta seja próxima a SELIC Over.\nEntramos em um grande ponto: O sistema bancário brasileiro é um sistema de reservas fracionárias. Logo, os bancos têm em posse apenas uma fração da movimentação do dinheiro total. Podemos ter casos em que os bancos estão com valores menores que o previsto nas contas no BACEN ou valores acima do previsto. Seguindo a lógica, um banco com excesso de reservas empresta dinheiro aos bancos que precisam de dinheiro com cobrança de juros. No entanto, se o empréstimo for realizado com títulos públicos como garantia, legalmente eles devem ser pagos no dia seguinte. Dai surge o nome overnight (“durante a noite”)\nQual o motivo do CDI?\nPodemos citar como um dos motivos a regulação do sistema financeiro. Os bancos obrigatoriamente tem de fechar o dia com o caixa positivo.\nEm situações as quais os bancos precisam de dinheiro e não dispõem de títulos publicos para oferecer como garantia ou pretendem realizar o empréstimo por mais de um dia, é emitido um título chamado de Certificado de Depósito Interbancário (CDI)\nA taxa cobrada nos empréstimos no mercado interbancário emitindo CDI é chamada Taxa DI (Taxa de depósitos interfinanceiros)\n“A man who asks is a fool for five minutes. A man who never asks is a fool for life.”"
+  },
+  {
+    "objectID": "posts/ibov_grafico/index.html",
+    "href": "posts/ibov_grafico/index.html",
+    "title": "Gráfico Interativo do Ibovespa",
+    "section": "",
+    "text": "Se uma imagem vale mais que mil palavras, quanto vale uma animação?\nA partir da biblioteca matplotlib conseguimos usar um conjunto de features, entre eles o de criar uma animação\nUsaremos do pandas para leitura do arquivo xlsx (disponível no github), módulo display da IPython para visualização do output e o módulo date da biblioteca datetime, para manipulação de datas\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport matplotlib.animation as animation\nimport numpy as np\nimport matplotlib.dates as mdates\nfrom IPython import display\nimport pandas as pd\nfrom datetime import date\n\npd.set_option(\"future.no_silent_downcasting\", True)\n\nLendo o arquivo, renomeando as coluna de fechamento, dropando os N/As e utilizando do resample para uma frequência mensal (último dia de cada mês)\n\nibov = pd.read_excel(\n    r\"C:\\Users\\Jean Victor\\Desktop\\Projetos\\IBOV.xlsx\", index_col=\"Data\"\n).dropna()\nibov = ibov.rename(columns={\"Fechamento\\najust p/ prov\\nEm moeda orig\": \"Fechamento\"})\nibov = ibov.replace(\"-\", float(\"nan\")).dropna()\nibov = ibov.resample(\"ME\").last()\n\n(Nesta parte é importante ressaltar a configuração do limite dos eixos X e Y). Caso você tente executar o código sem isto, seu gráfico vai sofrer distorções grandes dado que o eixo será ajustado automaticamente a cada frame\nCom ax.spines removemos as grades da direita e do topo\n\nfig: plt.Figure = plt.figure()\nax: plt.Axes\n\nfig, ax = plt.subplots()\n\n\nax.set_title(\"Ibovespa - 1990 a 2024\")\nax.set_xlim(date(1989, 12, 31), date(2024, 2, 29))\nax.set_ylim(0, 130000)\nax.spines[[\"right\", \"top\"]].set_visible(False)\n\n&lt;Figure size 672x480 with 0 Axes&gt;\n\n\n\n\n\n\n\n\n\nCriando uma função para formatação de nosso eixo Y com formatador de milhar como ponto e setando o eixo X por meio do set_major_locator para um intervalo de 4 anos. Em seguida, criamos a função de animação para que cada ponto do gráfico seja percorrido, inclusive o último.\n\ndef format_yaxis(x, pos=None):\n    \"\"\"Formatando os valores do eixo x.\"\"\"\n    return \"{:,.0f}\".format(x).replace(\",\", \".\")\n\n\nax.yaxis.set_major_formatter(plt.FuncFormatter(format_yaxis))\nax.xaxis.set_major_locator(mdates.YearLocator(4))\n\n\ndef animate(i):\n\n    data = ibov.iloc[: int(i + 1)]\n    ax.plot(data.index, data.values, color=\"b\")\n\nAplicando a função\n\nani = animation.FuncAnimation(\n    fig, animate, frames=range(0, len(ibov)), interval=50, repeat=False\n)\n\nvideo = ani.to_html5_video()\n\n\nhtml = display.HTML(video)\n\n\ndisplay.display(html)\nplt.close()\n\n\n  \n  Your browser does not support the video tag.\n\n\n\nVoilà"
+  }
+]

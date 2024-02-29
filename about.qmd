@@ -1,0 +1,16 @@
+---
+title: "Jean Victor"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/jeanvictorar/
+    - icon: github
+      text: Github
+      href: https://github.com/jeanvictoraraujo
+
+---
+
+Escrevo sobre finanças & tecnologia

@@ -1,0 +1,17 @@
+---
+title: "Postagens"
+listing:
+  contents: posts
+  categories: true
+  date-format: "DD/MM/YYYY"
+  feed: true
+  filter-ui: false
+  image-align: "left"
+  sort: "date desc"
+  sort-ui: false
+  type: default
+  template: custom.ejs
+format: 
+  html:
+    page-layout: article
+---
