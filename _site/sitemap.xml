@@ -1,31 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jeanv.netlify.app/posts/regex/index.html</loc>
+    <loc>https://jeanvictor.netlify.app/posts/regex/index.html</loc>
     <lastmod>2024-02-29T00:36:15.673Z</lastmod>
   </url>
   <url>
-    <loc>https://jeanv.netlify.app/posts/cdi/index.html</loc>
-    <lastmod>2024-02-29T00:10:51.625Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jeanv.netlify.app/index.html</loc>
-    <lastmod>2024-02-29T00:24:54.295Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jeanv.netlify.app/about.html</loc>
-    <lastmod>2024-02-29T00:10:51.618Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jeanv.netlify.app/license.html</loc>
-    <lastmod>2024-02-29T00:10:51.621Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jeanv.netlify.app/posts/ibov_grafico/index.html</loc>
+    <loc>https://jeanvictor.netlify.app/posts/ibov_grafico/index.html</loc>
     <lastmod>2024-02-29T00:10:51.626Z</lastmod>
   </url>
   <url>
+    <loc>https://jeanvictor.netlify.app/posts/cdi/index.html</loc>
+    <lastmod>2024-02-29T00:10:51.625Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jeanvictor.netlify.app/index.html</loc>
+    <lastmod>2024-02-29T00:24:54.295Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jeanvictor.netlify.app/about.html</loc>
+    <lastmod>2024-02-29T00:10:51.618Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jeanvictor.netlify.app/license.html</loc>
+    <lastmod>2024-02-29T00:10:51.621Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jeanvictor.netlify.app/posts/erp_implicito/index.html</loc>
+    <lastmod>2024-02-29T01:05:35.376Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jeanvictor.netlify.app/posts/oilgas/index.html</loc>
+    <lastmod>2024-02-29T01:45:39.829Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jeanv.netlify.app/index.html</loc>
+    <lastmod>2024-02-29T01:57:53.909Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jeanv.netlify.app/posts/oilgas/index.html</loc>
+    <lastmod>2024-02-29T01:45:39.829Z</lastmod>
+  </url>
+  <url>
     <loc>https://jeanv.netlify.app/posts/erp_implicito/index.html</loc>
-    <lastmod>2024-02-29T01:03:22.191Z</lastmod>
+    <lastmod>2024-02-29T01:05:35.376Z</lastmod>
   </url>
 </urlset>

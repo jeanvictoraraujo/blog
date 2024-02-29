@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/oilgas/index.html",
       "/posts/erp_implicito/index.html",
       "/posts/ibov_grafico/index.html",
       "/posts/regex/index.html",
