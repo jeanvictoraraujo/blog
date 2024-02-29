@@ -1,0 +1,30 @@
+---
+title: "Equity Risk Premium Implícito - EUA"
+date: "2024-02-28"
+categories: ["Renda Fixa", "Renda Variável"]
+description: O ERP Implícito nos moldes de Damodaran.
+image: image.jpg
+---
+
+A noção de risco sofreu grandes alterações nas última decadas, sendo que um dos maiores pontos de inflexão se deu no conceito do retorno esperado em um investimento se basear na soma de uma taxa livre de risco (risk-free rate) e um prêmio: Equity Risk Premium para o caso de investimento em ações.
+
+Com o advento das finanças modernas surge o risco atrelado ao desvio dos retornos reais em relação a um retorno esperado, de modo que um investimento é considerado livre de risco quando seus retornos reais coincidem com o retorno esperado.
+
+Do ponto de vista de uma empresa, ao analisar a implementação de um novo projeto como a expansão de sua capacidade produtiva deve ser avaliado se os retornos esperados do investimento superam o custo de capital atrelado a ele.
+
+Suponha que uma empresa americana deseja fazer um investimento para construção de novas fábricas e que foram calculados retornos esperados para os acionistas de 7% a.a e que a taxa livre de risco seja de 4% a.a. Se o prêmio de risco fosse de 4% teriamos um custo de capital próprio estimado em 8% a.a. De tal forma, o retorno esperado do investimento não seria suficiente para cobrir o custo de capital próprio da empresa.
+
+Obtenção do Equity Risk Premium Implícito nos EUA (jan/24)
+
+Conforme divulgado no próprio site do Damodaran, utilizaremos da sua metodologia as estimativas de crescimento dos analistas para o S&P500 e dados de dividendos e recompras nos últimos 12 meses.
+
+Do total de dividendos e recompras (164,25), temos um percentual aproximado de 74,76% de Cash Payout, dos quais projetaremos 78% para os anos seguintes.
+
+Como taxa de crescimento para os 5 anos inputamos o valor de 8,74% (estimativa de analistas) e para a perpetuidade o percentual de 3,88% (T-bond 10Y).
+
+Para obtenção do retorno esperado, basta encontrar a taxa cujo somatório dos fluxo a valor presente seja igual ao valor do índice (4.769,83)
+
+Por fim, para o Equity Risk Premium, basta subtrair o valor de 8,47% (retorno esperado implícito) da risk free rate de 3,88%, chegando a um total de 4,59%.
+
+![](erp.jpg)
+

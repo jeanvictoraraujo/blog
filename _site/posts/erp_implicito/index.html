@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-02-28">
+<meta name="description" content="O ERP Implícito nos moldes de Damodaran.">
 
-<title>Jean Victor - Postagens</title>
+<title>Jean Victor - Equity Risk Premium Implícito - EUA</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./favicon.jpg" rel="icon" type="image/jpeg">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../favicon.jpg" rel="icon" type="image/jpeg">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,80 +68,26 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-execute','listing-language','listing-freeze','listing-title-block-banner','listing-title','listing-date','listing-categories','listing-description','listing-image','listing-path','listing-outputHref','listing-date-modified','listing-author','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-jupyter',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-format","listing-execute","listing-language","listing-freeze","listing-title-block-banner","listing-title","listing-date","listing-categories","listing-description","listing-image","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-jupyter"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="alternate" type="application/rss+xml" title="Jean Victor" href="index.xml" data-external="1"><meta property="og:title" content="Jean Victor - Postagens">
+<meta property="og:title" content="Jean Victor - Equity Risk Premium Implícito - EUA">
+<meta property="og:description" content="O ERP Implícito nos moldes de Damodaran.">
+<meta property="og:image" content="https://jeanv.netlify.app/posts/erp_implicito/image.jpg">
 <meta property="og:site_name" content="Jean Victor">
-<meta name="twitter:title" content="Jean Victor - Postagens">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Jean Victor - Equity Risk Premium Implícito - EUA">
+<meta name="twitter:description" content="O ERP Implícito nos moldes de Damodaran.">
+<meta name="twitter:image" content="https://jeanv.netlify.app/posts/erp_implicito/image.jpg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Jean Victor</span>
     </a>
   </div>
@@ -154,11 +100,11 @@ window.Quarto = {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">Autor</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
 </ul>
@@ -169,203 +115,63 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Equity Risk Premium Implícito - EUA</h1>
+                  <div>
+        <div class="description">
+          O ERP Implícito nos moldes de Damodaran.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Renda Fixa</div>
+                <div class="quarto-category">Renda Variável</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 28, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Python">Python <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Renda Fixa">Renda Fixa <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Renda Variável">Renda Variável <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Tecnologia">Tecnologia <span class="quarto-category-count">(2)</span></div></div></div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Postagens</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<p>A noção de risco sofreu grandes alterações nas última decadas, sendo que um dos maiores pontos de inflexão se deu no conceito do retorno esperado em um investimento se basear na soma de uma taxa livre de risco (risk-free rate) e um prêmio: Equity Risk Premium para o caso de investimento em ações.</p>
+<p>Com o advento das finanças modernas surge o risco atrelado ao desvio dos retornos reais em relação a um retorno esperado, de modo que um investimento é considerado livre de risco quando seus retornos reais coincidem com o retorno esperado.</p>
+<p>Do ponto de vista de uma empresa, ao analisar a implementação de um novo projeto como a expansão de sua capacidade produtiva deve ser avaliado se os retornos esperados do investimento superam o custo de capital atrelado a ele.</p>
+<p>Suponha que uma empresa americana deseja fazer um investimento para construção de novas fábricas e que foram calculados retornos esperados para os acionistas de 7% a.a e que a taxa livre de risco seja de 4% a.a. Se o prêmio de risco fosse de 4% teriamos um custo de capital próprio estimado em 8% a.a. De tal forma, o retorno esperado do investimento não seria suficiente para cobrir o custo de capital próprio da empresa.</p>
+<p>Obtenção do Equity Risk Premium Implícito nos EUA (jan/24)</p>
+<p>Conforme divulgado no próprio site do Damodaran, utilizaremos da sua metodologia as estimativas de crescimento dos analistas para o S&amp;P500 e dados de dividendos e recompras nos últimos 12 meses.</p>
+<p>Do total de dividendos e recompras (164,25), temos um percentual aproximado de 74,76% de Cash Payout, dos quais projetaremos 78% para os anos seguintes.</p>
+<p>Como taxa de crescimento para os 5 anos inputamos o valor de 8,74% (estimativa de analistas) e para a perpetuidade o percentual de 3,88% (T-bond 10Y).</p>
+<p>Para obtenção do retorno esperado, basta encontrar a taxa cujo somatório dos fluxo a valor presente seja igual ao valor do índice (4.769,83)</p>
+<p>Por fim, para o Equity Risk Premium, basta subtrair o valor de 8,47% (retorno esperado implícito) da risk free rate de 3,88%, chegando a um total de 4,59%.</p>
+<p><img src="erp.jpg" class="img-fluid"></p>
 
-<div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
 
-<ul class="list" style="list-style-type:none">
 
-  <li data-index="0" data-categories="Renda Fixa,Renda Variável" data-listing-date-sort="1709089200000" data-listing-file-modified-sort="1709168602191" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="338">
-  
-    <div id="container" style="height:100%; width:100%; overflow: hidden; display: flex; margin-left: -35px; margin-bottom: 30px;">
-    
-      <div id="itemImage" style="width:150px; height:150px; background-size:contain; background-position:center; margin: 0px 30px 15px 0px;">
-      
-        <a href="./posts/erp_implicito/index.html" class="listing-categories">
-          <img src="./posts/erp_implicito/image.jpg" width="150" height="150">
-        </a>
-        
-      </div>
-    
-    <div id="itemDetails" style="width:100%;">
-    
-      <div id="itemHeader" style="justify-content: space-between; line-height:30px; margin-bottom:3px; align-items:flex-start;">
-    
-      <div id="itemTitle" style="display:block; width:95%">
-        <p style="font-size:22px">
-          <a href="./posts/erp_implicito/index.html" class="listing-categories">Equity Risk Premium Implícito - EUA
-          </a>
-        </p>
-      </div>
-    
-      <div id="itemDescription" style="margin-bottom:8px">
-        O ERP Implícito nos moldes de Damodaran.
-      </div>
-    
-      <div id="created" style="margin-top:8px">
-        <p style="font-size:14px">28/02/2024</p>
-      </div>
-    
-    </div>
-    
-  </div>
-  
-</div>
-
-</li>
-
-  <li data-index="1" data-categories="Tecnologia,Renda Variável,Python" data-listing-date-sort="1709089200000" data-listing-file-modified-sort="1709165451626" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="287">
-  
-    <div id="container" style="height:100%; width:100%; overflow: hidden; display: flex; margin-left: -35px; margin-bottom: 30px;">
-    
-      <div id="itemImage" style="width:150px; height:150px; background-size:contain; background-position:center; margin: 0px 30px 15px 0px;">
-      
-        <a href="./posts/ibov_grafico/index.html" class="listing-categories">
-          <img src="./posts/ibov_grafico/image.jpg" width="150" height="150">
-        </a>
-        
-      </div>
-    
-    <div id="itemDetails" style="width:100%;">
-    
-      <div id="itemHeader" style="justify-content: space-between; line-height:30px; margin-bottom:3px; align-items:flex-start;">
-    
-      <div id="itemTitle" style="display:block; width:95%">
-        <p style="font-size:22px">
-          <a href="./posts/ibov_grafico/index.html" class="listing-categories">Gráfico Interativo do Ibovespa
-          </a>
-        </p>
-      </div>
-    
-      <div id="itemDescription" style="margin-bottom:8px">
-        Evolução do Ibovespa desde 1990 no Python.
-      </div>
-    
-      <div id="created" style="margin-top:8px">
-        <p style="font-size:14px">28/02/2024</p>
-      </div>
-    
-    </div>
-    
-  </div>
-  
-</div>
-
-</li>
-
-  <li data-index="2" data-categories="Tecnologia,Python" data-listing-date-sort="1708138800000" data-listing-file-modified-sort="1709166975673" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="253">
-  
-    <div id="container" style="height:100%; width:100%; overflow: hidden; display: flex; margin-left: -35px; margin-bottom: 30px;">
-    
-      <div id="itemImage" style="width:150px; height:150px; background-size:contain; background-position:center; margin: 0px 30px 15px 0px;">
-      
-        <a href="./posts/regex/index.html" class="listing-categories">
-          <img src="./posts/regex/image.jpg" width="150" height="150">
-        </a>
-        
-      </div>
-    
-    <div id="itemDetails" style="width:100%;">
-    
-      <div id="itemHeader" style="justify-content: space-between; line-height:30px; margin-bottom:3px; align-items:flex-start;">
-    
-      <div id="itemTitle" style="display:block; width:95%">
-        <p style="font-size:22px">
-          <a href="./posts/regex/index.html" class="listing-categories">Expressões Regulares
-          </a>
-        </p>
-      </div>
-    
-      <div id="itemDescription" style="margin-bottom:8px">
-        Conceito e exemplo de expressões regulares.
-      </div>
-    
-      <div id="created" style="margin-top:8px">
-        <p style="font-size:14px">17/02/2024</p>
-      </div>
-    
-    </div>
-    
-  </div>
-  
-</div>
-
-</li>
-
-  <li data-index="3" data-categories="Renda Fixa" data-listing-date-sort="1704596400000" data-listing-file-modified-sort="1709165451625" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="459">
-  
-    <div id="container" style="height:100%; width:100%; overflow: hidden; display: flex; margin-left: -35px; margin-bottom: 30px;">
-    
-      <div id="itemImage" style="width:150px; height:150px; background-size:contain; background-position:center; margin: 0px 30px 15px 0px;">
-      
-        <a href="./posts/cdi/index.html" class="listing-categories">
-          <img src="./posts/cdi/image.jpg" width="150" height="150">
-        </a>
-        
-      </div>
-    
-    <div id="itemDetails" style="width:100%;">
-    
-      <div id="itemHeader" style="justify-content: space-between; line-height:30px; margin-bottom:3px; align-items:flex-start;">
-    
-      <div id="itemTitle" style="display:block; width:95%">
-        <p style="font-size:22px">
-          <a href="./posts/cdi/index.html" class="listing-categories">Conceito de CDI
-          </a>
-        </p>
-      </div>
-    
-      <div id="itemDescription" style="margin-bottom:8px">
-        Breve entendimento sobre o conceito de CDI.
-      </div>
-    
-      <div id="created" style="margin-top:8px">
-        <p style="font-size:14px">07/01/2024</p>
-      </div>
-    
-    </div>
-    
-  </div>
-  
-</div>
-
-</li>
-
-</ul>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -771,7 +577,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./license.html">
+    <a class="nav-link" href="../../license.html">
 <p>License</p>
 </a>
   </li>  
